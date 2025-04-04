@@ -1,13 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-/* font-family: 'Mulish', sans-serif;
-font-family: 'Open Sans', sans-serif; */
 
 body {
   background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
-
   min-height: 100vh;
 }
 
@@ -17,31 +15,40 @@ body {
   padding-top: 64px;
 }
 
-/* Check margin */
 nav {
   font-family: 'Mulish', sans-serif;
   color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 45px;
 }
 
-/* Check list styling */
 nav ul {
   display: flex;
   gap: 48px;
+  list-style: none;
 }
 
-/* Check list link style */
 nav ul li a {
-
+  color: #1F1534;
+  text-decoration: none;
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
-/* Make text bold on hover */
 nav ul li a:hover {
-  
-}
+  font-weight: 700;
+  opacity: 1;
+} 
 
+.active {
+  font-weight: 700;
+  opacity: 1;
+}
 
 main {
   display: flex;
@@ -50,46 +57,82 @@ main {
   margin-bottom: 88px;
 }
 
-/* Check margin and font styling */
 .text h1 {
   font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 16px;
+  text-transform: uppercases;
 }
 
-/* Check font styling */
 .text h1 span {
+  font-weight: 700;
+  color: #89C5CC;
 }
 
-/* Check font styling */
 .text p {
-  font-family: 'Open Sans', sans-serif; 
-}
-
-/* Check font styling and make sure the button is rounded */
-.text button {
   font-family: 'Open Sans', sans-serif;
+  color: #7D7987;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  margin-bottom: 48px;
+}
+
+.text p span {
+  font-weight: 700;
+}
+
+.text button {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #69B99D;
+  color: #F9F9F9;
   display: flex;
+  padding: 14px 32px 15px 32px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
   gap: 8px;
+  width: fit-content;
+  text-align: center;
 }
 
-/* Handle when user hover on the button */
 .text button:hover {
+  background-color: #4A9F70;
+  text-decoration: underline;
 }
 
-/* Check the text styling */
 footer {
-  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
-/* Check the text styling */
 footer a {
   color: #000;
   text-decoration: none;
   font-weight: 700;
 }
 
+footer a:hover{
+  text-decoration: underline;
+}
+
 #balls {
   position: fixed;
   bottom: 0px;
   right: 0px;
+  color: linear-gradient(#89C5CC, #89C5CC);
 }
 
