@@ -20,7 +20,6 @@ nav {
   color: #000;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 45px;
 }
 
@@ -57,6 +56,12 @@ main {
   margin-bottom: 88px;
 }
 
+.text > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInStagger 0.8s ease-out forwards;
+}
+
 .text h1 {
   font-family: 'Mulish', sans-serif;
   font-weight: 400;
@@ -64,7 +69,7 @@ main {
   line-height: 150%;
   letter-spacing: 0%;
   margin-bottom: 16px;
-  text-transform: uppercases;
+  animation-delay: 0.2s;
 }
 
 .text h1 span {
@@ -80,11 +85,9 @@ main {
   line-height: 160%;
   letter-spacing: 0%;
   margin-bottom: 48px;
+  animation-delay: 0.4s;
 }
 
-.text p span {
-  font-weight: 700;
-}
 
 .text button {
   font-family: 'DM Sans', sans-serif;
@@ -102,6 +105,7 @@ main {
   gap: 8px;
   width: fit-content;
   text-align: center;
+  animation-delay: 0.6s;
 }
 
 .text button:hover {
@@ -136,3 +140,25 @@ footer a:hover{
   color: linear-gradient(#89C5CC, #89C5CC);
 }
 
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInStagger {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-top {
+  display: inline-block; 
+  animation: fadeInTop 1s ease-out forwards;
+}
