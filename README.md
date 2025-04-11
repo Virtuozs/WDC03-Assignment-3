@@ -119,7 +119,6 @@ nav ul li a:hover {
   line-height: 150%;
   letter-spacing: 0%;
   margin-bottom: 16px;
-  text-transform: uppercases;
 }
 
 .text h1 span {
